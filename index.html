@@ -2,34 +2,11 @@
 <title>Tic Tac Toe</title>
 <meta charset="UTF-8" />
 <link rel="stylesheet"  href="css.css">
-<style>
-  body,
-  td,
-  input {
-    font-size: 24px;
-    line-height: 1.5;
-    text-align: center;
-    font-family: system-ui, sans-serif;
-  }
-  td {
-    height: 3rem;
-    width: 3rem;
-    text-align: center;
-  }
-  table {
-    margin: 5rem auto;
-  }
-  @media (prefers-color-scheme: dark) {
-    body,
-    input {
-      background: #222;
-      color: #ccc;
-    }
-  }
-</style>
-</head><body>
-<h1>Tic Tac Toe</h1>
+</head>
 
+<body>
+<h1>Tic Tac Toe</h1>
+<section>
 <table>
   <tr>
     <td><input type="checkbox" /></td>
@@ -47,9 +24,11 @@
     <td><input type="checkbox" /></td>
   </tr>
 </table>
+</section>
 a sf theme
 <h2 hidden>Game over, refresh to play again 🧑‍💻 🤖!</h2>
-
+<hr>
+<h2>Description</h2>
 <script>
   // Initialization
   const boxes = Array.from(document.querySelectorAll("td"));
